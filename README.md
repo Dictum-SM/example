@@ -18,3 +18,7 @@ Utils are special:
 
 1. Utils might not make sense to add as submodules.
 2. Utils are mostly exclusive to the respective environment.
+
+Terraform State:
+
+1. Store Terraform state as a kubernetes secret
