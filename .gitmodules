@@ -1,0 +1,12 @@
+[submodule "state"]
+	path = state
+	url = https://github.com/Dictum-SM/state.git
+[submodule "ansible/roles"]
+	path = ansible/roles
+	url = https://github.com/Asymmetrik/ansible-roles.git
+[submodule "kubernetes/vendor/rook"]
+	path = kubernetes/vendor/rook
+	url = https://github.com/rook/rook.git
+[submodule "kubernetes/vendor/istio"]
+	path = kubernetes/vendor/istio
+	url = https://github.com/istio/istio.git
