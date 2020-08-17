@@ -10,3 +10,6 @@
 [submodule "kubernetes/vendor/istio"]
 	path = kubernetes/vendor/istio
 	url = https://github.com/istio/istio.git
+[submodule "terraform/example-module"]
+	path = terraform/example-module
+	url = https://github.com/gruntwork-io/intro-to-terraform.git
