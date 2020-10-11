@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: state
+  namespace: state-machine
+data:
+  istio-base-file: "vendor/istio/manifests/base/files"
+  istio-operator-kustom: "vendor/istio/operator/deploy/"
+  istio-system-ns-file: "services/istio/dep/install/istio-system-ns.yaml"
+  istio-operator-hc-script: "state/scripts/istio-op-hc-script.sh"
+  ingress-secret-script: "state/scripts/ingress-secret-script.sh"
+  ingress-secret-file: "utils/secrets/ingress-secret.yaml"
+  istio-install-kustom: "services/istio/dep/install/"
+  istio-gw-hc-script: "state/scripts/istio-gw-hc-script.sh"
+  devops-tools-ns-file: "services/nexus/dep/devops-tools-ns.yaml"
+  istio-config-kustom: "services/istio/dep/config/"
+  tekton-install-kustom: "services/tekton/dep/tekton-install/"
+  jtt-repo-secret-script: "state/scripts/jtt-key-script.sh"
+  jtt-repo-secret-file: "services/tekton/dep/clusterinstall/jttssh-secret.yaml"
+  ddjtdev-repo-secret-script: "state/scripts/ddjtdev-git-key-script.sh"
+  ddjtdev-repo-secret-file: "services/tekton/dep/clusterinstall/gitssh-secret.yaml"
+  devops-tools-sidecar-kbuild: "services/nexus/custom"
+  rook-common-file: "vendor/rook/cluster/examples/kubernetes/ceph/common.yaml"
+  rook-operator-file: "vendor/rook/cluster/examples/kubernetes/ceph/operator.yaml"
+  rook-ceph-cluster-file: "services/rook/dep/zoneb/cluster.yaml"
+  rook-ceph-toolbox-file: "vendor/rook/cluster/examples/kubernetes/ceph/toolbox.yaml"
+  rook-ceph-storageclass-file: "services/rook/dep/zoneb/storageclass.yaml"
+  rook-registry-filesystem-file: "services/rook/dep/zoneb/filesystem.yaml"
+  rook-registry-storageclass-file: "services/rook/dep/cephfs-registry/storageclass.yaml"
+  rook-registry-deployment-file: "services/rook/dep/cephfs-registry/kube-registry.yaml"
+  rook-registry-svc-file: "services/rook/dep/cephfs-registry/kube-reg-svc.yaml"
+  rook-registry-vs-file: "services/rook/dep/cephfs-registry/registry-virtualservice.yaml"
+  nexus-deployment-file: "services/nexus/dep/nexus-deploy.yaml"
+  nexus-vs-file: "services/nexus/dep/nexus-virtualservice.yaml"
+  cluster-secret-script: "state/scripts/cluster-secret.sh"
+  cluster-secret-file: "utils/secrets/cluster-secret.yaml"
+  state-ns-file: "state/data/state-ns.yaml"
+  state-file: "state/data/state.yaml"

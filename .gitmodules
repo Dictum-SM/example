@@ -13,3 +13,27 @@
 [submodule "terraform/example-module"]
 	path = terraform/example-module
 	url = https://github.com/gruntwork-io/intro-to-terraform.git
+[submodule "kubernetes/hosted/app1/base"]
+	path = kubernetes/hosted/app1/base
+	url = git@github.com:Dictum-SM/app1.git
+[submodule "kubernetes/hosted/app2/base"]
+	path = kubernetes/hosted/app2/base
+	url = git@github.com:Dictum-SM/app2.git
+[submodule "kubernetes/services/efk/base"]
+	path = kubernetes/services/efk/base
+	url = git@github.com:Dictum-SM/efk.git
+[submodule "kubernetes/services/istio/base"]
+	path = kubernetes/services/istio/base
+	url = git@github.com:Dictum-SM/istio.git
+[submodule "kubernetes/services/nexus/base"]
+	path = kubernetes/services/nexus/base
+	url = git@github.com:Dictum-SM/nexus.git
+[submodule "kubernetes/services/prometheus/base"]
+	path = kubernetes/services/prometheus/base
+	url = git@github.com:Dictum-SM/prometheus.git
+[submodule "kubernetes/services/rook/base"]
+	path = kubernetes/services/rook/base
+	url = git@github.com:Dictum-SM/rook-ceph.git
+[submodule "kubernetes/services/tekton/base"]
+	path = kubernetes/services/tekton/base
+	url = git@github.com:Dictum-SM/tekton.git
